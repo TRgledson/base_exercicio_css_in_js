@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import { Theme } from './themes/light'
 
-const EstiloGlobal = createGlobalStyle `
+const EstiloGlobal = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;

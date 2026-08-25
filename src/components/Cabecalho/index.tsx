@@ -1,7 +1,8 @@
 import { Cabecalho as CabecalhoEstilo } from './styles'
 
-export type Props = {
-  children: string
-  fontSize?: number
+
+const Cabecalho = () => {
+  return <CabecalhoEstilo><h1>EBAC Jobs</h1></CabecalhoEstilo>
 }
 
+export default Cabecalho

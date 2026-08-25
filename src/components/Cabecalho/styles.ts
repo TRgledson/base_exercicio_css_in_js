@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
-import { Props } from '.'
 
-export const Cabecalho = styled.header<Props>`
-  background-color: ${(props) => props.theme.corPrincipal};
+export const Cabecalho = styled.header`
+  background-color: ${(props) => props.theme.corSegundaria};
+  color: ${(props) => props.theme.corPrincipal};
+  text-align: center;
+  padding: 24px 0;
 `
