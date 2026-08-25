@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import { Theme } from './themes/light'
 
 const EstiloGlobal = createGlobalStyle `
   * {
@@ -10,6 +11,7 @@ const EstiloGlobal = createGlobalStyle `
   }
   body {
     padding-bottom: 120px;
+    background-color: ${(props) => (props.theme as Theme).corSegundaria}
   }
 `
 export default EstiloGlobal

@@ -4,3 +4,8 @@ const temaLight = {
 }
 
 export default temaLight
+
+export type Theme = {
+  corPrincipal: string
+  corSegundaria: string
+}
