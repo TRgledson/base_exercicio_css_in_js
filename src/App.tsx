@@ -1,16 +1,18 @@
 import { ThemeProvider } from 'styled-components'
 import temaLight from './themes/light'
 import EstiloGlobal, { Container } from './styles'
-import Header from './components/Cabecalho';
-import { FormVagas } from './components/FormVagas';
+import Header from './components/Cabecalho'
+import Hero from './components/Hero'
+import ListaVagas from './containers/ListaVagas'
 
 function App() {
   return (
     <ThemeProvider theme={temaLight}>
       <EstiloGlobal />
+      <Header />
+      <Hero />
       <Container>
-        <Header />
-        <FormVagas aopesquisar={(termo: string) => console.log(termo)} />
+        <ListaVagas />
       </Container>
     </ThemeProvider>
   )

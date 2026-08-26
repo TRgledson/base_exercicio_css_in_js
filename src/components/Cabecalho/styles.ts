@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const Cabecalho = styled.header`
   background-color: ${(props) => props.theme.corSegundaria};
   color: ${(props) => props.theme.corPrincipal};
