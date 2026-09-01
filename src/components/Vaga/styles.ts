@@ -1,22 +1,22 @@
 import styled from 'styled-components'
 
 export const VagaListItem = styled.li`
-  border: 1px solid var(${(props) => props.theme.corPrincipal});
-  background-color: var(${(props) => props.theme.corSegundaria});
-  color: var(${(props) => props.theme.corPrincipal});
+  border: 1px solid ${(props) => props.theme.corPrincipal};
+  background-color: ${(props) => props.theme.corSegundaria};
+  color: ${(props) => props.theme.corPrincipal};
   padding: 16px;
   transition: all ease 0.3s;
   border-radius: 8px;
 
   &:hover {
-    background-color: var(${(props) => props.theme.corPrincipal});
-    color: var(${(props) => props.theme.corSegundaria});
+    background-color: ${(props) => props.theme.corPrincipal};
+    color: ${(props) => props.theme.corSegundaria};
   }
 
   &:hover a {
-    border-color: var(${(props) => props.theme.corPrincipal});
-    background-color: var(${(props) => props.theme.corSegundaria});
-    color: var(${(props) => props.theme.corPrincipal});
+    border-color: ${(props) => props.theme.corPrincipal};
+    background-color: ${(props) => props.theme.corSegundaria};
+    color: ${(props) => props.theme.corPrincipal};
   }
 `
 export const VagaTitulo = styled.h3`
@@ -25,8 +25,8 @@ export const VagaTitulo = styled.h3`
 `
 
 export const VagaLink = styled.a`
-  border-color: var(${(props) => props.theme.corSegundaria});
-  background-color: var(${(props) => props.theme.corPrincipal});
+  border-color: ${(props) => props.theme.corSegundaria};
+  background-color: ${(props) => props.theme.corPrincipal};
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;

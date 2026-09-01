@@ -11,7 +11,8 @@ const EstiloGlobal = createGlobalStyle`
   }
   body {
     padding-bottom: 120px;
-    background-color: ${(props) => (props.theme as Theme).corSegundaria}
+    background-color: ${(props) => (props.theme as Theme).corDoFundo};
+    color: ${(props) => props.theme.corQuaternaria};
   }
 `
 export default EstiloGlobal

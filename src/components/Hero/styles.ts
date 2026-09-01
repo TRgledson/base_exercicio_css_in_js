@@ -15,7 +15,7 @@ export const HeroForm = styled.form`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(${(props) => props.theme.corPrincipal});
+    background-color: ${(props) => props.theme.corPrincipal};
     content: '';
     opacity: 0.7;
   }
