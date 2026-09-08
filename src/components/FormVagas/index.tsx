@@ -1,22 +1,25 @@
 import { Formulario, Botao, Input } from './styles'
-import { FormEvent, useState } from 'react'
+import { useState, type SyntheticEvent, type ChangeEvent } from 'react'
 
 type Props = {
   aoPesquisar: (termo: string) => void
 }
 
-const FormVagas = ({ aoPesquisar }: Props) => {
+export function FormVagas({ aoPesquisar }: Props) {
   const [termo, setTermo] = useState<string>('')
 
-  const aoEnviarForm = (e: FormEvent<HTMLFormElement>) => {
+  const aoEnviar = (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault()
     aoPesquisar(termo.toLocaleLowerCase())
   }
+
   return (
-    <Formulario onSubmit={aoEnviarForm}>
+    <Formulario onSubmit={aoEnviar}>
       <Input
         placeholder="Front-end, fullstack, node, design"
-        onChange={(e) => setTermo(e.target.value)}
+        onChange={(e: ChangeEvent<HTMLInputElement>) =>
+          setTermo(e.target.value)
+        }
         type="search"
       />
       <Botao type="submit">Pesquisar</Botao>
