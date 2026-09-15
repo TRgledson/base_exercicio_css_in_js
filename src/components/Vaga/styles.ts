@@ -27,6 +27,7 @@ export const VagaTitulo = styled.h3`
 export const VagaLink = styled.a`
   border-color: ${(props) => props.theme.corSegundaria};
   background-color: ${(props) => props.theme.corPrincipal};
+  color: ${(props) => props.theme.corSegundaria};
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;

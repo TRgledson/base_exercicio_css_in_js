@@ -14,11 +14,11 @@ const Vaga = (props: Props) => (
   <VagaListItem>
     <VagaTitulo>{props.titulo}</VagaTitulo>
     <ul>
-      <li>Localização: {props.localizacao}</li>
+      <li>Localizacao: {props.localizacao}</li>
       <li>Senioridade: {props.nivel}</li>
-      <li>Tipo de contratação: {props.modalidade}</li>
+      <li>Tipo de contratacao: {props.modalidade}</li>
       <li>
-        Salário: R$ {props.salarioMin} - R$ {props.salarioMax}
+        Salário: {props.salarioMin} - {props.salarioMax}
       </li>
       <li>Requisitos: {props.requisitos.join(', ')}</li>
     </ul>

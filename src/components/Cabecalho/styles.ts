@@ -4,10 +4,11 @@ export const Cabecalho = styled.header`
   background-color: ${(props) => props.theme.corSegundaria};
   color: ${(props) => props.theme.corPrincipal};
   text-align: center;
-  padding: 24px 20px;
-  display: flex;
-  justify-content: flex-end;
+  padding: 24px 0;
+  // display: flex;
+  // justify-content: flex-end;
 `
+
 export const Tituloh1 = styled.h1`
   margin: 0;
   flex: 1;

@@ -1,4 +1,4 @@
-import { Cabecalho as CabecalhoEstilo, BotaoTema, Tituloh1 } from './styles'
+import { Cabecalho as CabecalhoEstilo } from './styles'
 
 type Props = {
   trocaTema: () => void
@@ -7,8 +7,7 @@ type Props = {
 const Cabecalho = (props: Props) => {
   return (
     <CabecalhoEstilo>
-      <Tituloh1>EBAC Jobs</Tituloh1>
-      <BotaoTema onClick={props.trocaTema}>Trocar Tema</BotaoTema>
+      <h1>EBAC Jobs</h1>
     </CabecalhoEstilo>
   )
 }

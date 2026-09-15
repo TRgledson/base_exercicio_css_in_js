@@ -1,18 +1,15 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import { Theme } from './themes/light'
 
 const EstiloGlobal = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    box-sizing: borde-box;
-    font-family: Lato, sans-senrif;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
     list-style: none;
   }
   body {
     padding-bottom: 120px;
-    background-color: ${(props) => (props.theme as Theme).corDoFundo};
-    color: ${(props) => props.theme.corQuaternaria};
   }
 `
 export default EstiloGlobal
@@ -23,8 +20,6 @@ export const Container = styled.div`
   margin: 0 auto;
 
   @media (max-width: 1024px) {
-    .container {
       max-width: 80%;
-    }
   }
 `

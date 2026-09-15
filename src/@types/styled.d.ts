@@ -5,7 +5,5 @@ declare module 'styled-components' {
     corPrincipal: string
     corSegundaria: string
     corTerciaria: string
-    corQuaternaria: string
-    corDoFundo: string
   }
 }
