@@ -13,7 +13,6 @@ function App() {
   function trocaTema() {
     setEstadoUsandoTemaLight(!estadoUsandoTemaLight)
   }
-  document.title = 'EBAC Jobs'
 
   return (
     <ThemeProvider theme={estadoUsandoTemaLight ? temaLight : temaDark}>
