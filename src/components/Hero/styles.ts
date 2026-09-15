@@ -24,8 +24,8 @@ export const HeroForm = styled.form`
     color: ${(props) => props.theme.corTerciaria};
   }
   @media (max-width: 768px) {
-      height: auto;
-      padding: 24px 0;
+    height: auto;
+    padding: 24px 0;
   }
 `
 
